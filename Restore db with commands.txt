@@ -1,0 +1,1 @@
+DBCC opentran- this command is to view the opened transactions without commit.

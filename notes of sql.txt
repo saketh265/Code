@@ -1,0 +1,52 @@
+
+RECOVERY BACKUP- If we perform recovery backup then we can make changes to the particular db and then we can work on the particular db.
+
+NORECOVERY BACKUP- If we perform Norecovery backup then it is only for reading purpose we cant make any changes to the db.
+
+
+
+
+
+
+FULL BACKUP - backup database (please enter db_name) to disk ='F:\FULLBACK.BAK'
+                              with init
+
+
+DIFFERENTIAL BACKUP -  backup database (please enter db_name) to disk ='F:\DIFFBACK.BAK'
+                              with DIFFERENTIAL,init
+
+
+LOG BACKUP -  backup LOG (please enter db_name) to disk ='F:\LOGBACK.BAK'
+                              with NO_TRUNCATE
+
+
+
+RESTORING
+
+restore database (please enter db_name) from disk='F:\FULLBACK.BAK'
+with norecovery
+
+(We wont get data and we cnt edit it )
+
+(If we do norecovery then we wont be getting data )
+
+(If we do recovery then we will be getting data and we can make changes)
+
+restore database (please enter db_name) from disk='F:\DIFFBACK.BAK'
+with norecovery
+
+
+(We wont get data and we cnt edit it )
+
+(If we do recovery then we will be getting data and we can make changes)
+
+
+(If we do norecovery then we wont be getting data )
+
+restore log database (please enter db_name) from disk='F:\logBACK.BAK'
+with recovery
+
+(we will get data and we cn make changes)
+
+
+

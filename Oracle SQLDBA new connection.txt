@@ -1,0 +1,8 @@
+TO set new connection without TNS file..
+
+1) open cmd and type sqlplus/nolog
+2) conn /as sysdba
+3)alter user system(/*username*/) identified by root(/*password*/)
+4)conn system
+5) Enter your created password which is beside identified by 
+6) And it will be connected
